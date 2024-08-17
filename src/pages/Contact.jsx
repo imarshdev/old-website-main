@@ -10,7 +10,7 @@ function Contact() {
   return (
     <>
       <div className="fade-in">
-        <title>contact | snipc</title>
+        <title>Order Ride | Walamin</title>
         <div id="hero_text">
           <h2 className="text_hero_text">Contact</h2>
           <p className="text_hero_text">

@@ -9,9 +9,9 @@ function Footer() {
           <iconify-icon
             icon="ph:link-bold"
             style={{ color: "#999" }}
-          ></iconify-icon>{" "}
-        </p>{" "}
-        <span id="text">Open Source | © Shaurya </span>
+          ></iconify-icon>
+        </p>
+        <span id="text">Walamin Green | © iMarsh </span>
       </a>
     </div>
   );
