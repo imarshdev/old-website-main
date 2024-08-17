@@ -1,0 +1,2 @@
+- [ ] fix discord status
+- [ ] move to a new animation library

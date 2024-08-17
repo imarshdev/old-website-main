@@ -1,0 +1,126 @@
+/* this is the main css file with universal styling  */
+
+/* poppins, DM sans and work sans fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Inter&display=swap');
+
+/* main colors  */
+/* :root{
+    --bg-dark: rgb(23, 23, 23);
+    --margin-dark: #242424;
+    --secondary-bg-dark: rgba(36, 36, 36, 0.3);
+    --special-text: rgb(214, 187, 187);
+    --tertiary-background-color: rgba(44, 44, 44, 0.3);
+    --tertiary2-background-color: #141414;
+    --text-white: rgb(212, 212, 212);
+    --dark-text: rgb(102, 102, 102);
+    --tw-bg-opacity: 0.3;
+    --dc-status: rgb(180, 180, 180)
+} */
+
+
+/* for dark mode folks  */
+  [data-theme='dark'] {
+    --bg-dark: rgb(23, 23, 23);
+    --margin-dark: #242424;
+    --secondary-bg-dark: rgba(36, 36, 36, 0.3);
+    --special-text: rgb(214, 187, 187);
+    --tertiary-background-color: rgba(44, 44, 44, 0.3);
+    --tertiary2-background-color: #141414;
+    --text-white: rgb(212, 212, 212);
+    --dark-text: rgb(102, 102, 102);
+    --tw-bg-opacity: 0.3;
+    --dc-status: rgb(180, 180, 180);
+    --sb-thumb: #404040;
+    --sb-track: #262626;
+  }
+
+  /* light is also fine (unless its IDE)  */
+  [data-theme='light'] {
+    --bg-dark: #f9fafb;
+    --margin-dark: #d8d9df;
+    --secondary-bg-dark: #f8f8f89c;
+    --special-text: rgb(224, 184, 184);
+    --tertiary-background-color: #f0efef;
+    --tertiary2-background-color: #e9e9e9;
+    --text-white: rgb(73, 72, 72);
+    --dark-text: rgb(139, 139, 139);
+    --tw-bg-opacity: 0.3;
+    --dc-status: rgb(71, 71, 71);
+    --sb-thumb: #d1d5db;
+    --sb-track: #e5e7eb;
+  }
+
+
+
+/* remove user's abillity to select images and text  */
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+    -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+    outline: none !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* change default bg to dark and display flex  */
+html {
+    color: white;
+    display: flex;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+
+/* set body width  */
+body {
+    width: 77%;
+}
+
+
+/* the scroll bar styling */
+html ::-webkit-scrollbar-thumb {
+    background-color: var(--sb-thumb);
+    /* height: 2px; */
+}
+
+/* the scrollbar  */
+html ::-webkit-scrollbar-track {
+    background-color: var(--sb-track);
+
+}
+
+html ::-webkit-scrollbar {
+    height: 2px;
+    width: 8px;
+}
+
+
+/* scroll to top button styling  */
+#scroll_to_top {
+    border: 1px solid var(--margin-dark);
+    padding: 5px 19px;
+    padding-top: 6px;
+    padding-bottom: 0px;
+    border-radius: 20px;
+    background-color: var(--secondary-bg-dark);
+}
+
+
+/* hero text on top of pages styles  */
+.text_hero_text {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--text-white);
+    margin-top: 3rem;
+}
+
+
+/* for mobile folks */
+@media only screen and (max-width: 600px) {
+    body {
+        width: 95%;
+    }
+}
